@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#form-container, #animals-list {
+    margin-bottom: 20px;
+}
+
+#animal-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#animal-form input, #animal-form button {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#animal-form button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#animal-form button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.remove {
+    background-color: #f44336;
+    color: white;
+}
