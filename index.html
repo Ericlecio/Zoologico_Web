@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Zoológico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Zoológico</h1>
+        <div id="form-container">
+            <h2>Cadastrar/Atualizar Animal</h2>
+            <form id="animal-form">
+                <input type="hidden" id="animal-id">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="especie">Espécie:</label>
+                <input type="text" id="especie" required>
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" required>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+        <div id="animals-list">
+            <h2>Lista de Animais</h2>
+            <button onclick="fetchAnimals()">Atualizar Lista</button>
+            <ul id="animals"></ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
