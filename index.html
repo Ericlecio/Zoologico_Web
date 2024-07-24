@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,15 +18,33 @@
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" required>
                 <label for="especie">Espécie:</label>
-                <input type="text" id="especie" required>
-                <label for="data_nascimento">Data de Nascimento:</label>
-                <input type="date" id="data_nascimento" required>
+                <select id="especie" required>
+                    <option value="">Selecione a espécie</option>
+                </select>
+                <label for="idade">Idade (em anos):</label>
+                <input type="number" id="idade" required>
+                
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" required>
+                    <option value="">Selecione o sexo</option>
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                    <option value="indeterminado">Indeterminado</option>
+                </select>
+                <label for="origem">Origem:</label>
+                <select id="origem" required>
+                    <option value="">Selecione a origem</option>
+                    <option value="macho">Nascido no zoológico</option>
+                    <option value="femea">Resgatado da natureza</option>
+                    <option value="indeterminado">Doação de outro zoológico</option>
+                </select>
+                
                 <button type="submit">Salvar</button>
             </form>
         </div>
         <div id="animals-list">
             <h2>Lista de Animais</h2>
-            <button onclick="fetchAnimals()">Atualizar Lista</button>
+            <button onclick="fetchAnimals()" class="botaoAtualizar">Atualizar Lista</button>
             <ul id="animals"></ul>
         </div>
     </div>
