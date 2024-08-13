@@ -1,0 +1,21 @@
+{
+    "animais": [
+      {
+        "id": 1,
+        "nome": "Leão",
+        "especie": "Panthera leo",
+        "idade": 5,
+        "sexo": "macho",
+        "origem": "Nascido no zoológico"
+      },
+      {
+        "id": 2,
+        "nome": "Elefante",
+        "especie": "Loxodonta africana",
+        "idade": 8,
+        "sexo": "fêmea",
+        "origem": "Resgatado da natureza"
+      }
+    ]
+  }
+  
